@@ -16,21 +16,21 @@
   <body>
     <h1 class="text-white text-center text-uppercase my-4">calcola il prezzo del tuo biglietto</h1>
 
-    <div class="container bg-white p-5 fw-bold">
+    <div class="container bg-white p-5 fw-bold rounded-4 shadow-lg">
         <form class="container px-5">
             <div class="row justify-content-around pb-5">
                 <div class="col-auto">
-                    <label for="nome" class="text-center d-block text-my-primary fw-bold">Nome e Cognome</label>
+                    <label for="nome" class="text-center d-block text-my-primary fw-bold pb-4">Nome e Cognome</label>
                     <input type="text" id="nome" name="nome" value="" class="rounded-2 p-2 border-my-primary">
                 </div>
 
                 <div class="col-auto">
-                    <label for="dist" class="text-center d-block text-my-primary">Km da percorrere</label>
+                    <label for="dist" class="text-center d-block text-my-primary pb-4">Km da percorrere</label>
                     <input type="number" id="dist" name="dist" value="" class="rounded-2 p-2 border-my-primary">
                 </div>
 
                 <div class="col-auto">
-                    <label for="age" class="text-center d-block text-my-primary fw-bold">Fascia d'età</label>
+                    <label for="age" class="text-center d-block text-my-primary fw-bold pb-4">Fascia d'età</label>
                     <select name="age" id="age" class="rounded-2 p-2 border-my-primary fw-bold">
                         <option value="">--Seleziona--</option>
                         <option value="minorenne">Minorenne</option>
@@ -45,6 +45,39 @@
                 <input type="reset" value="Annulla" class="btn bg-my-btn btn-outline-danger text-my-primary fw-bold fs-4">
             </div>
         </form>
+    </div>
+
+    <div id="my-ticket" class="d-none">
+        <h2 class="text-white text-center text-uppercase my-4 fs-1">il tuo biglietto</h2>
+
+        <div class="container bg-white p-5 shadow-lg">
+            <h3 class="fs-2 text-uppercase">Dettaglio passeggero</h3>
+            <div class="row border-my-secondary">
+                <div class="col-4 bg-my-secondary fw-bold p-3">
+                    <div class="text-uppercase">nome passeggero</div>
+
+                    <div id="nome-passeggero"></div>
+                </div>
+
+                <div class="col-8 p-3">
+                    <table>
+                        <tr>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+
+                        <tr>
+                            <td>Biglietto Standard</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
   </body>
 </html>

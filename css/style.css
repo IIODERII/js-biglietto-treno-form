@@ -20,3 +20,27 @@ body{
 .bg-my-btn{
     background-color: var(--my-btn-color);
 }
+
+.border-my-secondary{
+    border-color: var(--my-secondary-color)!important;
+}
+
+.bg-my-secondary{
+    background-color: var(--my-secondary-color);
+}
+
+#my-ticket .row{
+    height: 180px;
+}
+
+th{
+    height: 80px;
+    vertical-align: top;
+    padding: 0 20px;
+}
+
+td{
+    height: 80px;
+    vertical-align: bottom;
+    padding: 0 20px;
+}
