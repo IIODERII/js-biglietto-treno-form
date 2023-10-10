@@ -12,5 +12,39 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Ticket Generator</title>
   </head>
-  <body></body>
+
+  <body>
+    <h1 class="text-white text-center text-uppercase my-4">calcola il prezzo del tuo biglietto</h1>
+
+    <div class="container bg-white p-5 fw-bold">
+        <form class="container px-5">
+            <div class="row justify-content-around pb-5">
+                <div class="col-auto">
+                    <label for="nome" class="text-center d-block text-my-primary fw-bold">Nome e Cognome</label>
+                    <input type="text" id="nome" name="nome" value="" class="rounded-2 p-2 border-my-primary">
+                </div>
+
+                <div class="col-auto">
+                    <label for="dist" class="text-center d-block text-my-primary">Km da percorrere</label>
+                    <input type="number" id="dist" name="dist" value="" class="rounded-2 p-2 border-my-primary">
+                </div>
+
+                <div class="col-auto">
+                    <label for="age" class="text-center d-block text-my-primary fw-bold">Fascia d'età</label>
+                    <select name="age" id="age" class="rounded-2 p-2 border-my-primary fw-bold">
+                        <option value="">--Seleziona--</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over">Over</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="pt-4 text-center">
+                <button class="btn bg-my-btn btn-outline-danger text-my-primary fw-bold fs-4 mx-4">Genera</button>
+                <input type="reset" value="Annulla" class="btn bg-my-btn btn-outline-danger text-my-primary fw-bold fs-4">
+            </div>
+        </form>
+    </div>
+  </body>
 </html>
